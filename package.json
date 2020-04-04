@@ -1,9 +1,30 @@
 {
-  "name": "decodebufferjs",
+  "name": "saga-palm-decode",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
+  "description": "Classes for decode/encode bluetooth palm from Sagatech Brasil",
   "scripts": {
-    "start": "node index.js"
+    "start": "ts-node-dev --respawn --transpileOnly src/index.ts",
+    "build": "tsc"
   },
-  "license": "MIT"
+  "keywords": ["saga", "palm", "decode", "encode"],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunolipe-a/saga-palm-decode/issues"
+  },
+  "homepage": "https://github.com/brunolipe-a/saga-palm-decode",
+  "dependencies": {
+    "java-random": "^0.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^2.0.2",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "@types/node": "^13.11.0",
+    "typescript": "^3.8.3"
+  }
 }
