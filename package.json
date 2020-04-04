@@ -1,12 +1,15 @@
 {
   "name": "saga-palm-decode",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "description": "Classes for decode/encode bluetooth palm from Sagatech Brasil",
   "scripts": {
-    "start": "ts-node-dev --respawn --transpileOnly src/index.ts",
+    "dev": "ts-node-dev --respawn --transpileOnly lib/index.ts",
     "build": "tsc"
   },
+  "files": ["dist/**/*"],
+  "prepare" : "npm run build",
   "keywords": ["saga", "palm", "decode", "encode"],
   "license": "MIT",
   "bugs": {
